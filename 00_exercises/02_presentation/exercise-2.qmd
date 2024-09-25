@@ -1,0 +1,46 @@
+---
+title: "Exercise 2"
+author:
+  - name: Ward B. Eiling
+    orcid: 0009-0007-8114-9497
+format: 
+  revealjs:
+    progress: true
+    slideNumber: true
+    embed-resources: true
+    logo: "uu-logo.png"
+---
+
+## requirements
+
+Create a presentation about any topic you like that consists of at least 7 slides and includes all of the following:
+
+a logo
+a centered still figure
+an interactive table
+a moving figure, interactive figure or movie
+a 2-column slide
+an aligned multi-row equation
+a citation and reference list
+a bibliographic reference
+r-code, displayed but not executed
+cached and labeled r-code (may overlap with the next requirement)
+r-code, executed, but not displayed (e.g. a figure generation)
+an renv reproducible enviroment
+
+## Centered still figure
+
+## Interactive table
+
+## Moving/Interactive figure
+
+## 2 Column slide: aligned multi-row equation, citation
+
+## r-code displayed but not executred
+
+## cached and labeled r-code
+
+## executed but not displayed r-code
+
+## `renv` reproducible environment
+

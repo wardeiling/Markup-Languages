@@ -1,0 +1,24 @@
+---
+title: "Exercise 1"
+author:
+  - name: Ward B. Eiling
+    orcid: 0009-0007-8114-9497
+format: 
+  revealjs:
+    progress: true
+    slideNumber: true
+    embed-resources: true
+    logo: "uu-logo.png"
+---
+
+## Leave-one-out Cross-validation
+
+The formula for the leave-one-out cross-validation estimate of the prediction error is
+
+$$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$
+
+where $y_i$ is the true response value for observation $i$, and $\hat{y}_i$ is the predicted response value.
+
+## Source of information about me
+
+I like windsurfing.
