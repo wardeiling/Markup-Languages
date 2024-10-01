@@ -5,42 +5,184 @@ author:
     orcid: 0009-0007-8114-9497
 format: 
   revealjs:
+    width: 1920
+    height: 1080
+    # margin: 0.1
+    scrollable: true
     progress: true
     slideNumber: true
     embed-resources: true
     logo: "uu-logo.png"
+execute:
+  echo: true
+  warning: false
+  message: false
+bibliography: references.bib
 ---
 
-## requirements
+## Requirements
 
 Create a presentation about any topic you like that consists of at least 7 slides and includes all of the following:
 
-a logo
-a centered still figure
-an interactive table
-a moving figure, interactive figure or movie
-a 2-column slide
-an aligned multi-row equation
-a citation and reference list
-a bibliographic reference
-r-code, displayed but not executed
-cached and labeled r-code (may overlap with the next requirement)
-r-code, executed, but not displayed (e.g. a figure generation)
-an renv reproducible enviroment
+-   a logo
 
-## Centered still figure
+-   a centered still figure
+
+-   an interactive table
+
+-   a moving figure, interactive figure or movie
+
+-   a 2-column slide
+
+-   an aligned multi-row equation
+
+-   a citation and reference list
+
+-   a bibliographic reference
+
+-   r-code, displayed but not executed
+
+-   cached and labeled r-code (may overlap with the next requirement)
+
+-   r-code, executed, but not displayed (e.g. a figure generation)
+
+-   an `renv` reproducible enviroment
+
+## Centered Still Figure
+
+This summer I went on a hike in Austria, where I took the following picture.
+
+<center>
+
+![Centered Still Figure: Holiday Picture](holiday-picture.jpg){fig-align="center" width="75%"}
+
+</center>
 
 ## Interactive table
 
-## Moving/Interactive figure
+Let's make an interactive table of the `Boston` dataset from the `MASS` package.
 
-## 2 Column slide: aligned multi-row equation, citation
+```{r}
+#| code-line-numbers: true
+#| label: interactive table
 
-## r-code displayed but not executred
+library(MASS)
+library(DT)
+library(tidyverse)
 
-## cached and labeled r-code
+Boston %>%
+  datatable(options = list(pageLength = 10))
+```
 
-## executed but not displayed r-code
+## Interactive figure with cached and labeled r-code
+
+Let's make a moving figure of the `iris` dataset.
+
+```{r}
+#| code-line-numbers: true
+#| label: moving figure
+#| cache: true
+#| echo: fenced
+
+library(ggplot2)
+library(plotly)
+
+plot  <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+            geom_point() +
+            geom_smooth(se = TRUE, method = lm) +
+            theme_minimal() +
+            ggtitle("Iris dataset")
+plot %>% ggplotly()
+```
+
+## 2 Column slide: aligned multi-row equation
+
+::: columns
+::: {.column width="50%"}
+**everything left-aligned:**
+
+We may compute a, b, and c as follows:
+
+$\begin{align} a &= 0+1 \\ b &= 2+3 \\ c &= 4+5 \end{align}$
+
+where $k$ is the number of parameters and $L$ is the likelihood.
+:::
+
+::: {.column width="50%"}
+<center>
+
+**everything centered:**
+
+We may compute a, b, and c as follows:
+
+$\begin{align} a &= 0+1 \\ b &= 2+3 \\ c &= 4+5 \end{align}$
+
+where $k$ is the number of parameters and $L$ is the likelihood.
+
+</center>
+:::
+:::
+
+## R-code: two columns
+
+::: columns
+::: {.column width="50%"}
+
+displayed but not executed r-code
+
+```{r}
+#| code-line-numbers: true
+#| label: r-code displayed but not executed
+#| echo: fenced
+#| eval: false
+
+print("Oops, it didn't execute the r-code!")
+```
+:::
+
+::: {.column width="50%"}
+executed but not displayed r-code
+
+```{r}
+#| code-line-numbers: true
+#| label: r-code executed but not displayed
+#| echo: false
+#| eval: true
+
+print("Oops, it didn't show anything!")
+```
+:::
+:::
+
+## Citation
+
+In this presentation, we will use the `lme4` package [@bates2015] to fit a linear mixed model.
+
+```{r}
+#| code-line-numbers: true
+#| label: r-code citation
+#| code-fold: true
+
+# Fit a mixed linear model with lme4
+library(lme4)
+mlm <- lmer(Reaction ~ Days + (Days | Subject), sleepstudy)
+summary(mlm)
+```
 
 ## `renv` reproducible environment
 
+Let's create a reproducible environment with the `renv` package.
+
+```{r}
+#| code-line-numbers: true
+#| label: renv reproducible environment
+#| echo: fenced
+
+library(renv)
+renv::init()
+```
+
+## References
+
+::: {#refs}
+:::
