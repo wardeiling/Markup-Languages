@@ -2,4 +2,4 @@
 
 Deliverable 2: Formatted markup manuscript.
 
-Place the PDF version of your manuscript in this directory. See course manual for requirements.
+This directory contains the formatted markup manuscript (research report) created through Quarto Markdown.
