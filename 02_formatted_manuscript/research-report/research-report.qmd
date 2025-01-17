@@ -608,7 +608,7 @@ Finally, @qian2020 assumed independence between the random intercept and slope a
 #| cache: true
 #| escape: false
 
-results <- readRDS(here("02_formatted_manuscript/simulation_results_beta0_bias_sd_success.rds"))
+results <- readRDS(here("simulation_results_beta0_bias_sd_success.rds"))
 
 # remove gee_ex and gee_ar1 and gee_ind
 results <- results[, !grepl("gee_ex|gee_ar1|gee_ind", colnames(results))]
