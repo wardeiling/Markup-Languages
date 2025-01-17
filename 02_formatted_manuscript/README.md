@@ -17,7 +17,7 @@ When does the inclusion of endogenous variables in multilevel linear models resu
 - `research-report/research-report.pdf`: The rendered markup manuscript itself.
 - `research-report/research-report.qmd`: The markdown manuscript that can be rendered.
 
-- ## Installation
+## Installation
 To recreate the rendered manuscript `research-report.pdf`:
 1. Clone the repository or download the files.
 2. Open the R project `research-report.Rproj` within the folder `research-report`.
