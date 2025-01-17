@@ -14,5 +14,11 @@ This repository contains a markup manuscript created through Quarto Markdown add
 When does the inclusion of endogenous variables in multilevel linear models result in biased estimates of the treatment effect?
 
 ## Files
-- **research-report.pdf**: The rendered markup manuscript itself.
-- **research report.qmd**: The markdown manuscript that can be rendered after opening the R project.
+- `research-report/research-report.pdf`: The rendered markup manuscript itself.
+- `research-report/research-report.qmd`: The markdown manuscript that can be rendered.
+
+- ## Installation
+To recreate the rendered manuscript `research-report.pdf`:
+1. Clone the repository or download the files.
+2. Open the R project `research-report.Rproj` within the folder `research-report`.
+3. Open `research-report.qmd` and render.
