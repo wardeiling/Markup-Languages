@@ -1,5 +1,18 @@
-# Markup languages and reproducible programming in statistics
+# Investigating Bias in MLM with Endogenous Covariates
 
-Deliverable 2: Formatted markup manuscript.
+## Overview
+This repository contains a markup manuscript created through Quarto Markdown addressing a critical issue in psychological research: the impact of time-varying endogenous covariates on causal estimates in multilevel linear models (MLM). Specifically, it explores when the inclusion of such covariates results in biased treatment effect estimates and aims to provide a clearer understanding for researchers unfamiliar with the technical aspects.
 
-This directory contains the formatted markup manuscript (research report) created through Quarto Markdown.
+## Key Topics
+- The use of MLMs in longitudinal data analysis to explore causal relationships.
+- The challenges of endogenous covariates and their effects on model bias.
+- A focus on when and why MLMs produce biased estimates when handling time-varying endogenous covariates.
+- Visualizing the problem using path diagrams and directed acyclic graphs (DAGs).
+- Simulations to isolate the issue and evaluate model assumptions.
+
+## Research Question
+When does the inclusion of endogenous variables in multilevel linear models result in biased estimates of the treatment effect?
+
+## Files
+- **research-report.pdf**: The rendered markup manuscript itself.
+- **research report.qmd**: The markdown manuscript that can be rendered after opening the R project.
