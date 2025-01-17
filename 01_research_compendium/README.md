@@ -1,7 +1,7 @@
 # Investigating Bias in MLM with Endogenous Covariates
 
 ## Overview
-This research compendium contains a manuscript and the associated simulations addressing a critical issue in psychological research: the impact of time-varying endogenous covariates on causal estimates in multilevel linear models (MLM). Specifically, it explores when the inclusion of such covariates results in biased treatment effect estimates and aims to provide a clearer understanding for researchers unfamiliar with the technical aspects.
+This folder contains the deliverable 1: a research compendium including a manuscript and the associated simulations addressing a critical issue in psychological research: the impact of time-varying endogenous covariates on causal estimates in multilevel linear models (MLM). Specifically, it explores when the inclusion of such covariates results in biased treatment effect estimates and aims to provide a clearer understanding for researchers unfamiliar with the technical aspects.
 
 ## Key Topics
 - The use of MLMs in longitudinal data analysis to explore causal relationships.
