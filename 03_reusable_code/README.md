@@ -1,6 +1,6 @@
 # Shiny App: GLMM Interpretations
 
-This repository contains the deliverable 3: development files for a `Shiny` app designed to explore population-averaged and person-specific interpretations in generalized linear mixed models (GLMMs).
+This folder contains the deliverable 3: development files for a `Shiny` app designed to explore population-averaged and person-specific interpretations in generalized linear mixed models (GLMMs).
 
 ## Access the App
 The app is hosted on the Shiny server and can be accessed at the following link:  
