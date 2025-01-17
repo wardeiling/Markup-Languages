@@ -16,6 +16,6 @@ When does the inclusion of endogenous variables in multilevel linear models resu
 ## Installation
 To create the manuscript or run the simulations:
 1. Clone the repository or download the files.
-2. Open the R project within this folder (`Master-Thesis.Rproj`).
+2. Open the R project `Master-Thesis.Rproj` within the folder `Master-Thesis`.
 -  To create the manuscript: Open `research_report/research-report.qmd` and render.
 -  To run simulations: Open `scripts/updated scripts/simulation_updated_newmodels.R` and run the code.
